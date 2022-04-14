@@ -41,7 +41,7 @@ jobs:
           file test.pdf | grep -q ' PDF '
       - name: Deploy
         run: |
-          TAG="ghcr.io/xu-cheng/texlive-$SCHEME"
+          TAG="ghcr.io/2e0byo/texlive-$SCHEME"
           VERSION="$(date "+%Y%m%d")"
           docker tag texlive-$SCHEME $TAG:$VERSION
           docker tag texlive-$SCHEME $TAG:latest
