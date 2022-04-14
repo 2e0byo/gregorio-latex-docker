@@ -3,6 +3,8 @@
 set -e
 set -o pipefail
 
+git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
 scheme="$1"
 
 retry() {
